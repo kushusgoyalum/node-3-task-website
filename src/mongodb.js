@@ -37,7 +37,7 @@ MongoClient.connect(connectionURL, { useNewUrlParser: true }, (error, client) =>
     const db = client.db(databaseName)
 db.collection('tasks').deleteOne(
    {
-      description: 'clean the house'
+      description: 'clean the house certainly'
    }
 ).then((result) => {
    console.log(result)
